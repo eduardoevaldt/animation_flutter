@@ -1,4 +1,4 @@
-import 'package:animation_flutter/module/tween/screen/tween.screen.dart';
+import 'package:animation_flutter/module/animations/animations.dart';
 import 'package:flutter/material.dart';
 
 class Application extends StatelessWidget {
@@ -8,7 +8,7 @@ class Application extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Application',
-      home: TweenScreen(),
+      home: AnimationScreen(),
     );
   }
 }
