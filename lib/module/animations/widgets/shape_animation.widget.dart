@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-class ShapeWidget extends StatelessWidget {
+class ShapeAnimationWidget extends StatelessWidget {
   double size;
   double rotate;
   double opacity;
@@ -9,7 +9,7 @@ class ShapeWidget extends StatelessWidget {
   double offsetY;
   double containerSize;
 
-  ShapeWidget({
+  ShapeAnimationWidget({
     Key? key,
     this.size = 1,
     this.rotate = 0,
@@ -38,7 +38,7 @@ class ShapeWidget extends StatelessWidget {
             width: math.max((containerSize * 0.7) * size, 0),
             height: math.max(((containerSize * 0.7) * size) / 2, 0),
             decoration: BoxDecoration(
-              color: Colors.green,
+              color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.circular(8),
             ),
           ),

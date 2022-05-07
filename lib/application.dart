@@ -6,9 +6,16 @@ class Application extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Application',
-      home: AnimationScreen(),
+      theme: ThemeData(
+        primaryColor: Colors.green,
+        primarySwatch: Colors.green,
+        appBarTheme: const AppBarTheme(
+          color: Colors.green,
+        ),
+      ),
+      home: const AnimationScreen(),
     );
   }
 }

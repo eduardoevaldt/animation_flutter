@@ -1,6 +1,6 @@
 import 'package:animation_flutter/module/animations/helpers/curve.helper.dart';
 import 'package:animation_flutter/module/animations/widgets/select.widget.dart';
-import 'package:animation_flutter/module/animations/widgets/shape.widget.dart';
+import 'package:animation_flutter/module/animations/widgets/shape_animation.widget.dart';
 import 'package:flutter/material.dart';
 
 class AnimationScreen extends StatefulWidget {
@@ -118,7 +118,7 @@ class _AnimationScreenState extends State<AnimationScreen>
                       children: [
                         Column(
                           children: [
-                            ShapeWidget(
+                            ShapeAnimationWidget(
                               offsetY: animation.value,
                               containerSize:
                                   MediaQuery.of(context).size.width / 2.4,
@@ -133,7 +133,7 @@ class _AnimationScreenState extends State<AnimationScreen>
                         const SizedBox(width: 20),
                         Column(
                           children: [
-                            ShapeWidget(
+                            ShapeAnimationWidget(
                               rotate: animation.value,
                               containerSize:
                                   MediaQuery.of(context).size.width / 2.4,
@@ -153,7 +153,7 @@ class _AnimationScreenState extends State<AnimationScreen>
                       children: [
                         Column(
                           children: [
-                            ShapeWidget(
+                            ShapeAnimationWidget(
                               size: animation.value,
                               containerSize:
                                   MediaQuery.of(context).size.width / 2.4,
@@ -168,7 +168,7 @@ class _AnimationScreenState extends State<AnimationScreen>
                         const SizedBox(width: 20),
                         Column(
                           children: [
-                            ShapeWidget(
+                            ShapeAnimationWidget(
                               opacity: animation.value,
                               containerSize:
                                   MediaQuery.of(context).size.width / 2.4,
