@@ -20,8 +20,8 @@ class IconThemeWidget extends StatelessWidget {
         },
         icon: Icon(
           state.brightness == Brightness.dark
-              ? Icons.light_mode
-              : Icons.dark_mode,
+              ? Icons.dark_mode
+              : Icons.light_mode,
         ),
       );
     });
