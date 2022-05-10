@@ -1,6 +1,7 @@
 import 'package:animation_flutter/module/animations/helpers/curve.helper.dart';
 import 'package:animation_flutter/module/animations/widgets/select.widget.dart';
 import 'package:animation_flutter/module/animations/widgets/shape_animation.widget.dart';
+import 'package:animation_flutter/widget/icon_theme.widget.dart';
 import 'package:flutter/material.dart';
 
 class AnimationScreen extends StatefulWidget {
@@ -28,12 +29,6 @@ class _AnimationScreenState extends State<AnimationScreen>
       duration: Duration(milliseconds: int.parse(_durationController.text)),
     );
     startAnimation();
-  }
-
-  @override
-  void dispose() {
-    animationController.dispose();
-    super.dispose();
   }
 
   void startAnimation() {
@@ -71,10 +66,17 @@ class _AnimationScreenState extends State<AnimationScreen>
   }
 
   @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Animation demo"),
+        actions: const [IconThemeWidget()],
       ),
       body: Container(
         padding: const EdgeInsets.all(20),

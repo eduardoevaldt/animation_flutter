@@ -48,7 +48,7 @@ class _SelectWidgetState extends State<SelectWidget> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.transparent,
         borderRadius: BorderRadius.circular(10),
       ),
       child: DropdownButtonFormField<String>(
@@ -60,10 +60,8 @@ class _SelectWidgetState extends State<SelectWidget> {
         decoration: InputDecoration(
           contentPadding:
               const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-          filled: true,
           border: OutlineInputBorder(
-            borderSide: const BorderSide(color: Colors.grey, width: 2),
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(4),
           ),
         ),
         items: items.map<DropdownMenuItem<String>>((SelectItem item) {

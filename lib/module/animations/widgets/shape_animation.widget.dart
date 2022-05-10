@@ -27,7 +27,7 @@ class ShapeAnimationWidget extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       alignment: Alignment(1 - (offsetX * 2), 1 - (offsetY * 2)),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(4),
         border: Border.all(color: Colors.black54, width: 1),
       ),
       child: Transform.rotate(
@@ -35,11 +35,11 @@ class ShapeAnimationWidget extends StatelessWidget {
         child: Opacity(
           opacity: math.max(math.min(opacity, 1), 0),
           child: Container(
-            width: math.max((containerSize * 0.7) * size, 0),
-            height: math.max(((containerSize * 0.7) * size) / 2, 0),
+            width: math.max((containerSize * 0.6) * size, 0) + 30,
+            height: math.max(((containerSize * 0.6) * size) / 2, 0) + 15,
             decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(4),
             ),
           ),
         ),
